@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - Meu primeiro post</title>
+  <title>Blog - Lucas Beyer</title>
   <style>
     body {
       background-color: #f4f6f9;
@@ -25,26 +25,89 @@
       color: #183C63;
       max-width: 800px;
       margin: 0 auto;
-      padding: 16px;
+      padding: 20px;
       border-radius: 0 0 8px 8px;
+    }
+    article {
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    article:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
     img {
       width: 120px;
       height: 120px;
       border-radius: 8px;
     }
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #d63384;
+    }
+    .cartao-perfil {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: #e3f2fd;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    .cartao-perfil img {
+      border-radius: 50%;
+    }
+    .cartao-perfil h4 {
+      margin: 0 0 5px 0;
+    }
+    .cartao-perfil p {
+      margin: 0;
+      color: #333333;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Meu blog tech</h1>
     <p>Por: Lucas Beyer</p>
   </header>
+
   <main>
-    <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Ilustração estilo pixel art quadrada representando programação e educação com um livro e uma lâmpada acesa.">
-    <h2>Meu primeiro post</h2>
-    <h3>Por: Lucas Beyer</h3>
-    <h4>Vou compartilhar meus conhecimentos de tecnologia e programação para vocês!</h4>
+    <!-- PRIMEIRO POST -->
+    <article>
+      <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Ilustração estilo pixel art quadrada representando programação e educação com um livro e uma lâmpada acesa.">
+      <h2>Meu primeiro post</h2>
+      <h3>Por: Lucas Beyer</h3>
+      <h4>Vou compartilhar meus conhecimentos de tecnologia e programação para vocês!</h4>
+    </article>
+
+    <!-- SEGUNDO POST -->
+    <article>
+      <h2>Segundo post: Classes e Display Flex no CSS</h2>
+      <h3>Por: Lucas Beyer</h3>
+      <p>Hoje vou mostrar como usar a propriedade <code>display: flex</code> junto com <code>classes</code> para alinhar elementos facilmente na tela. Abaixo está um exemplo prático de um cartão de perfil:</p>
+      
+      <div class="cartao-perfil">
+        <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Foto de perfil de Lucas Beyer">
+        <div>
+          <h4>Lucas Beyer</h4>
+          <p>Desenvolvedor em aprendizado criando projetos práticos com HTML e CSS.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- TERCEIRO POST -->
+    <article>
+      <h2>Terceiro post: Estilizando Botões com CSS</h2>
+      <h3>Por: Lucas Beyer</h3>
+      <p>Neste terceiro post, aprendi como transformar um simples link HTML em um botão moderno utilizando o efeito de passar o mouse por cima, conhecido como pseudo-classe <code>:hover</code>!</p>
+    </article>
   </main>
+
 </body>
 </html>
