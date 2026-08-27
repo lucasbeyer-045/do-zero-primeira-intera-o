@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <title>Blog - Post 2</title>
   <style>
+    body {
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
     header {
       background-color: #183C63;
       color: #FFFFFF;
@@ -12,6 +18,7 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 16px;
+      border-radius: 8px 8px 0 0;
     }
     main {
       background-color: #FFFFFF;
@@ -19,25 +26,51 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 16px;
+      border-radius: 0 0 8px 8px;
     }
-    img{
+    img {
       width: 120px;
       height: 120px;
+      border-radius: 50%;
+    }
+    /* Estilos práticos para o exemplo do Post #2 */
+    .cartao-perfil {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: #e3f2fd;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+    .info-usuario h4 {
+      margin: 0 0 8px 0;
+    }
+    .info-usuario p {
+      margin: 0;
+      color: #333333;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Meu blog tech</h1>
-   <p>Por: Lucas Beyer</p>
+    <p>Por: Lucas Beyer</p>
   </header>
   <main>
-    <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="**Texto alternativo (Alt Text):**
-
-> Ilustração estilo pixel art quadrada representando programação e educação. No centro, um livro aberto com trechos de código colorido estilizado nas páginas. Acima do livro, uma lâmpada acesa brilhando, cercada por pequenos ícones flutuantes como chaves de código `{}`, lápis, engrenagem, estrela e cursor de mouse. O fundo é gradiente em tons de azul e verde.">
-    <h2>Meu primeiro post</h2>
+    <h2>Segundo post: Classes e Display Flex no CSS</h2>
     <h3>Por: Lucas Beyer</h3>
-    <h4>vou compartilhar meus conhecimentos de tecnologia e programação para vocês</h4>
+    
+    <p>Hoje vou mostrar como usar <code>display: flex</code> e <code>classes</code> para criar um cartão de perfil estilizado!</p>
+
+    <!-- Exemplo prático do cartão de perfil -->
+    <div class="cartao-perfil">
+      <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Ilustração em pixel art sobre programação e educação">
+      <div class="info-usuario">
+        <h4>Lucas Beyer</h4>
+        <p>Desenvolvedor em aprendizado criando projetos incríveis com HTML e CSS.</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
