@@ -68,6 +68,24 @@
       margin: 0;
       color: #333333;
     }
+
+    /* ESTILO DO BOTÃO (POST 3) */
+    .botao {
+      display: inline-block;
+      background-color: #183C63;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease; /* Faz a mudança de cor ser suave */
+    }
+
+    /* EFEITO AO PASSAR O MOUSE (:HOVER) */
+    .botao:hover {
+      background-color: #009688; /* Muda a cor quando o mouse passa por cima */
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -105,7 +123,10 @@
     <article>
       <h2>Terceiro post: Estilizando Botões com CSS</h2>
       <h3>Por: Lucas Beyer</h3>
-      <p>Neste terceiro post, aprendi como transformar um simples link HTML em um botão moderno utilizando o efeito de passar o mouse por cima, conhecido como pseudo-classe <code>:hover</code>!</p>
+      <p>Neste terceiro post, aprendi como transformar um simples link HTML em um botão moderno utilizando a pseudo-classe <code>:hover</code>!</p>
+      
+      <!-- Botão com o efeito hover funcionando -->
+      <a href="#" class="botao">Passe o mouse aqui!</a>
     </article>
   </main>
 
