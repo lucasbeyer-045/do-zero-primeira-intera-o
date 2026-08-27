@@ -38,10 +38,12 @@
       margin-bottom: 0;
       padding-bottom: 0;
     }
-    img {
+    .img-post {
       width: 120px;
       height: 120px;
       border-radius: 8px;
+      display: block;
+      margin-bottom: 10px;
     }
     code {
       background-color: #f0f0f0;
@@ -59,6 +61,8 @@
       margin-top: 15px;
     }
     .cartao-perfil img {
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
     }
     .cartao-perfil h4 {
@@ -69,21 +73,24 @@
       color: #333333;
     }
 
-    /* ESTILO DO BOTÃO (POST 3) */
-    .botao {
+    /* ESTILO DO BOTÃO */
+    .meu-botao {
       display: inline-block;
       background-color: #183C63;
-      color: #FFFFFF;
-      padding: 10px 20px;
+      color: #ffffff;
+      padding: 12px 24px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: bold;
-      transition: background-color 0.3s ease; /* Faz a mudança de cor ser suave */
+      transition: all 0.3s ease;
+      margin-top: 10px;
     }
 
-    /* EFEITO AO PASSAR O MOUSE (:HOVER) */
-    .botao:hover {
-      background-color: #009688; /* Muda a cor quando o mouse passa por cima */
+    /* EFEITO AO PASSAR O MOUSE */
+    .meu-botao:hover {
+      background-color: #009688;
+      color: #ffffff;
+      transform: scale(1.05); /* Faz o botão crescer levemente */
       cursor: pointer;
     }
   </style>
@@ -98,7 +105,7 @@
   <main>
     <!-- PRIMEIRO POST -->
     <article>
-      <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Ilustração estilo pixel art quadrada representando programação e educação com um livro e uma lâmpada acesa.">
+      <img class="img-post" src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Ilustração sobre programação">
       <h2>Meu primeiro post</h2>
       <h3>Por: Lucas Beyer</h3>
       <h4>Vou compartilhar meus conhecimentos de tecnologia e programação para vocês!</h4>
@@ -108,10 +115,10 @@
     <article>
       <h2>Segundo post: Classes e Display Flex no CSS</h2>
       <h3>Por: Lucas Beyer</h3>
-      <p>Hoje vou mostrar como usar a propriedade <code>display: flex</code> junto com <code>classes</code> para alinhar elementos facilmente na tela. Abaixo está um exemplo prático de um cartão de perfil:</p>
+      <p>Hoje vou mostrar como usar a propriedade <code>display: flex</code> junto com <code>classes</code> para alinhar elementos facilmente na tela:</p>
       
       <div class="cartao-perfil">
-        <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Foto de perfil de Lucas Beyer">
+        <img src="Gemini_Generated_Image_wymnaiwymnaiwymn.png" alt="Foto de perfil">
         <div>
           <h4>Lucas Beyer</h4>
           <p>Desenvolvedor em aprendizado criando projetos práticos com HTML e CSS.</p>
@@ -123,10 +130,9 @@
     <article>
       <h2>Terceiro post: Estilizando Botões com CSS</h2>
       <h3>Por: Lucas Beyer</h3>
-      <p>Neste terceiro post, aprendi como transformar um simples link HTML em um botão moderno utilizando a pseudo-classe <code>:hover</code>!</p>
+      <p>Passe o mouse sobre o botão abaixo para ver a cor mudar e ele aumentar de tamanho:</p>
       
-      <!-- Botão com o efeito hover funcionando -->
-      <a href="#" class="botao">Passe o mouse aqui!</a>
+      <a href="#" class="meu-botao">Passe o mouse aqui!</a>
     </article>
   </main>
 
